@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>Office Inventory</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#furniture">Furniture</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#devices">Devices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#food">Food</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+  </header>
+  <main id="main1">
+      <!-- <link rel="import" href="./furniture.html"> -->
+
+      <frameset>
+        <frame name = "furniture" src = "furniture.htm" />
+      </frameset>
+      
+  </main>
+  <footer>
+
+  </footer>
+
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="inputItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Tambah Item</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="formItem">
+                <div class="mb-3">
+                  <label for="inputItemKode" class="form-label">Kode</label>
+                  <input type="text" class="form-control" id="inputItemKode" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="inputItemName" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="inputItemName" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="inputItemQty" class="form-label">Qty</label>
+                  <input type="number" class="form-control" id="inputItemQty" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="inputItemDivisi" class="form-label">Divisi</label>
+                  <input type="text" class="form-control" id="inputItemDivisi" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="inputItemStatus" class="form-label">Status</label>
+                  <select class="form-select form-select-lg mb-3" id="inputItemStatus" aria-label=".form-select-lg example">
+                    <option selected>Status</option>
+                    <option value="Baru">Baru</option>
+                    <option value="Baik">Baik</option>
+                    <option value="Rusak">Rusak</option>
+                  </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" >Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="tambahDivisi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Tambah Divisi</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="formDivisi"">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Tambah Divisi</label>
+                  <input type="text" class="form-control" id="inputDivisi" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="./main.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

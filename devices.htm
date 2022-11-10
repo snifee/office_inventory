@@ -1,0 +1,43 @@
+<html>
+  <div class="container text-center shadow-sm p-3 mb-5 bg-body rounded mt-3">
+    <div class="row justify-content-start mb-1">
+      <div class="col">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#inputItem"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">+ Barang</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#tambahDivisi"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">+ Divisi</button>
+      </div>
+      <div class="col-10">
+        <p class="h3">Devices</p>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col">
+            <div class="list-group" id="divisi-list">
+                <span class="list-group-item list-group-item-action active" aria-current="true">
+                  <b>Divisi</b> 
+                </span>
+              </div>
+        </div>
+        <div class="col-10">
+            <table class="table table-bordered" id="table-places">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Kode</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Milik</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="tableMain">
+
+                </tbody>
+              </table>
+            
+        </div>
+    </div>   
+</div>
+</html>
+
